@@ -2,6 +2,26 @@ return {
   { "akinsho/toggleterm.nvim", version = "*", opts = {
     direction = "float",
   } },
+
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {
+      win = { wo = {
+        winblend = 30,
+      } },
+    },
+    keys = {
+      {
+        "<leader>?",
+        function()
+          require("which-key").show({ global = false })
+        end,
+        desc = "Buffer Local Keymaps (which-key)",
+      },
+    },
+  },
+
   {
     "williamboman/mason.nvim",
     build = ":MasonUpdate",
