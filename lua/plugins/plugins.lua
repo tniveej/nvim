@@ -1,5 +1,7 @@
 return {
-  { "akinsho/toggleterm.nvim", version = "*", config = true },
+  { "akinsho/toggleterm.nvim", version = "*", opts = {
+    direction = "float",
+  } },
   {
     "williamboman/mason.nvim",
     build = ":MasonUpdate",
