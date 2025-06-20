@@ -33,4 +33,10 @@ return {
     },
   },
   require("mason-lspconfig").setup(),
+
+  settings = {
+    ltex = {
+      language = "en-GB",
+    },
+  },
 }
