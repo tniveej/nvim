@@ -13,8 +13,8 @@ vim.keymap.set("n", "<S-h>", ":bprevious<CR>", { desc = "Previous buffer" })
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
 -- set tab in normal mode to tab
-vim.keymap.set("n", "<Tab>", ">>_", { noremap = true, silent = true })
-vim.keymap.set("n", "<S-Tab>", "<<_", { noremap = true, silent = true })
+-- vim.keymap.set("n", "<Tab>", ">>_", { noremap = true, silent = true })
+-- vim.keymap.set("n", "<S-Tab>", "<<_", { noremap = true, silent = true })
 
 -- local builtin = require("telescope.builtin")
 -- vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
