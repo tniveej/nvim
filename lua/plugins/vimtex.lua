@@ -8,5 +8,6 @@ return {
     vim.g.vimtex_grammar_textidote = {
       jar = "C:/Users/jeevi/AppData/Local/nvim/textidote.jar",
     }
+    vim.g.vimtex_fold_enabled = 1
   end,
 }

@@ -9,6 +9,11 @@ return {
         on_attach = function(client, bufnr)
           -- your on_attach process
         end,
+        settings = {
+          ltex = {
+            language = "en_GB",
+          },
+        },
       },
     })
   end,
