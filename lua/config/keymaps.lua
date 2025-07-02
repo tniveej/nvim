@@ -2,10 +2,13 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- change enter to open new line below the cursor
-vim.keymap.set("n", "<CR>", "o<Esc>", { desc = "Open new line below cursor" })
+-- change enter to open new line below the cursor. but make sure to move to the end of the line, enter new line and then enter normal mode back.
+-- this is to keep the indentation every time I enter.
+vim.keymap.set("n", "<CR>", "$a<CR>", { desc = "New line below cursor at the correct indentation" })
+-- vim.keymap.set("n", "<CR>", "o<Esc>", { desc = "Open new line below cursor" })
 -- change shift-enter to open new line above the cursor
 vim.keymap.set("n", "<S-CR>", "O<Esc>", { desc = "Open new line above cursor" })
+-- vim.keymap.set("i", "<S-CR>", "<Esc>Oj$a<CR>", { desc = "Insert mode, new line above" })
 
 -- buffer navigation using tab and movement keys
 vim.keymap.set("n", "<S-l>", ":bnext<CR>", { desc = "Next buffer" })
