@@ -7,8 +7,8 @@
 vim.keymap.set("n", "<CR>", "$a<CR>", { desc = "New line below cursor at the correct indentation" })
 -- vim.keymap.set("n", "<CR>", "o<Esc>", { desc = "Open new line below cursor" })
 -- change shift-enter to open new line above the cursor
-vim.keymap.set("n", "<S-CR>", "O<Esc>", { desc = "Open new line above cursor" })
--- vim.keymap.set("i", "<S-CR>", "<Esc>Oj$a<CR>", { desc = "Insert mode, new line above" })
+-- vim.keymap.set("n", "<S-CR>", "O<Esc>", { desc = "Open new line above cursor" })
+-- vim.keymap.set("i", "<S-CR>", "<Esc>Oa", { desc = "Insert mode, new line above" })
 
 -- buffer navigation using tab and movement keys
 vim.keymap.set("n", "<S-l>", ":bnext<CR>", { desc = "Next buffer" })
