@@ -23,7 +23,7 @@ return {
   },
 
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     build = ":MasonUpdate",
     opts = {
       registries = {
@@ -32,6 +32,7 @@ return {
       },
     },
   },
+  require("mason").setup(),
   require("mason-lspconfig").setup(),
 
   settings = {
