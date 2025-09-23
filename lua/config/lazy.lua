@@ -51,3 +51,21 @@ require("lazy").setup({
     },
   },
 })
+
+require("mason").setup({
+  ui = {
+    icons = {
+      package_installed = "✓",
+      package_pending = "➜",
+      package_uninstalled = "✗",
+    },
+  },
+})
+
+require("lspconfig").basedpyright.setup({
+  settings = {
+    basedpyright = {
+      typeCheckingMode = "recommended",
+    },
+  },
+})
