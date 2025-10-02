@@ -1,3 +1,7 @@
+-- if true then
+--   return {}
+-- end
+-- to disable the script
 return {
   "Exafunction/windsurf.nvim",
   dependencies = {

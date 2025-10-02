@@ -11,8 +11,8 @@ vim.keymap.set("n", "<CR>", "$a<CR>", { desc = "New line below cursor at the cor
 -- vim.keymap.set("i", "<S-CR>", "<Esc>Oa", { desc = "Insert mode, new line above" })
 
 -- buffer navigation using tab and movement keys
-vim.keymap.set("n", "<S-l>", ":bnext<CR>", { desc = "Next buffer" })
-vim.keymap.set("n", "<S-h>", ":bprevious<CR>", { desc = "Previous buffer" })
+-- vim.keymap.set("n", "<S-l>", ":bnext<CR>", { desc = "Next buffer" })
+-- vim.keymap.set("n", "<S-h>", ":bprevious<CR>", { desc = "Previous buffer" })
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
 -- set tab in normal mode to tab
@@ -24,3 +24,8 @@ vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" }
 -- vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
 -- vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
 -- vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
+--
+vim.keymap.set("n", "<leader>t", ":terminal<CR>", { desc = "Open terminal" })
+
+vim.keymap.set("n", "Q", "q", { noremap = true })
+vim.keymap.set("n", "q", "^", { noremap = true })

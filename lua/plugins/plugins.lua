@@ -1,7 +1,4 @@
 return {
-  { "akinsho/toggleterm.nvim", version = "*", opts = {
-    direction = "float",
-  } },
 
   {
     "folke/which-key.nvim",
